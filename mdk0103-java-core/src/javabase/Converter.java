@@ -2,7 +2,7 @@ package javabase;
 
 import java.util.Scanner;
 
-public class task_4 {
+public class Converter {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Which country do you want to visit?");

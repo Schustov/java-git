@@ -3,7 +3,7 @@ package javabase;
 import java.util.Date;
 import java.util.Scanner;
 
-public class task_5 {
+public class Greetings {
     public static void main(String[] args) {
         Date date = new Date();
         int currentTime = date.getHours();
