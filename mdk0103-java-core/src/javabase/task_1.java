@@ -1,6 +1,8 @@
+package javabase;
+
 import java.util.Scanner;
 
-public class Main {
+public class task_1 {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.print("Enter the number of plates: ");

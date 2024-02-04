@@ -1,6 +1,8 @@
+package javabase;
+
 import java.util.Random;
 
-public class Main {
+public class task_2 {
     public static void main(String[] args) {
         int[] spending = new int[7];
         int total = 0;
