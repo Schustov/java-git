@@ -18,7 +18,6 @@ public class FinancialCalculator {
                     Выберите пункт из меню:\s""");
             String choice = console.next();
 
-            label:
             switch (choice) {
                 case "0":
                     System.out.println("До свидания!");
@@ -65,6 +64,7 @@ public class FinancialCalculator {
                     }
                     System.out.printf("%s день - %s руб\n", index + 1, max);
                     break;
+
                 case "4":
                     System.out.print("""                    
                         1. Евро
@@ -72,6 +72,7 @@ public class FinancialCalculator {
                         3. Юани
                       Выберите пункт из меню:\s""");
                     choice = console.next().trim();
+
                     switch (choice) {
                         case "1":
                             for (int i = 0; i < spending.length; i++) {
@@ -91,14 +92,13 @@ public class FinancialCalculator {
                         default:
                             System.out.println("Такого пункта нет в меню.");
                             break;
-
                     }
                     break;
+
                 default:
                     System.out.println("Такого пункта нет в меню.");
                     break;
             }
-
         }
     }
 }
