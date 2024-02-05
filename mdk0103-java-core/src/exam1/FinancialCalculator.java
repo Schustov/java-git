@@ -1,5 +1,4 @@
 package exam1;
-import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
 //Александр Алексеевич Махов
