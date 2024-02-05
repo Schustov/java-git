@@ -1,7 +1,7 @@
 package exam1;
 import java.util.Objects;
 import java.util.Scanner;
-//Александр Алексеевич Махов
+
 public class FinancialCalculator {
     public static void main(String[] args) {
         double[] spending = new double[30];
