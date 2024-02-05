@@ -1,7 +1,8 @@
 package exam1;
+import java.io.IOException;
 import java.util.Objects;
 import java.util.Scanner;
-
+//Александр Алексеевич Махов
 public class FinancialCalculator {
     public static void main(String[] args) {
         double[] spending = new double[30];
@@ -28,10 +29,16 @@ public class FinancialCalculator {
                     while (session_1) {
                         System.out.print("Введите день: ");
                         choice = console.next();
-                        if (Integer.parseInt(choice) < 1 || Integer.parseInt(choice) > 30) {
+                        try {
+                            if (Integer.parseInt(choice) < 1 || Integer.parseInt(choice) > 30) {
+                                System.out.println("День не входит в диапазон, попробуйте еще раз.");
+                                continue;
+                            }
+                        } catch (NumberFormatException e) {
                             System.out.println("День не входит в диапазон, попробуйте еще раз.");
                             continue;
                         }
+
                         if (spending[Integer.parseInt(choice) - 1] != 0) {
                             System.out.print("Сумма уже указана, перезаписать?(да/нет): ");
                             String choice_1 = console.next().trim().toLowerCase();
