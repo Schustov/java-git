@@ -25,8 +25,8 @@ public class FinancialMethod {
             double savings = scanner.nextDouble();
             if (!checkValues(salary, transportExpenses, foodExpenses, savings)) continue;
 
-            System.out.println(String.format("You have enough salary for transport, food and savings, surplus funds are %s",
-                    salary - transportExpenses - foodExpenses - savings));
+            System.out.printf("You have enough salary for transport, food and savings, surplus funds are %s",
+                    salary - transportExpenses - foodExpenses - savings);
             status = false;
         }
     }
